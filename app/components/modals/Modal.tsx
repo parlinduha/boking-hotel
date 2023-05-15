@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react";
+import React, { useState } from "react";
 
 interface ModalProps {
     isOpen?: boolean;
@@ -18,6 +18,9 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({
     isOpen, onClose, onSubmit, title, body,footer, actionLabel, disabled, secondaryLabel, secondaryAction
 }) => {
+
+    const [showModal, setShowModal] = useState(false)
+
     return (  );
 }
  
