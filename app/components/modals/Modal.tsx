@@ -11,11 +11,13 @@ interface ModalProps {
     footer?: React.ReactElement;
     actionLabel: string;
     disabled?: boolean;
-    secondarySecond?: () => void;
+    secondaryAction?: () => void;
     secondaryLabel?: string; 
 }
 
-const Modal = () => {
+const Modal: React.FC<ModalProps> = ({
+    isOpen, onClose, onSubmit, title, body,footer, actionLabel, disabled, secondaryLabel, secondaryAction
+}) => {
     return (  );
 }
  
